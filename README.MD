@@ -17,4 +17,4 @@ The users that already exist in the XML:
 - username: secondclient
 - password: 5678
 ---
-start with the login page. enter the credentials and it should be straight forward from there.
+start with the login.php page. enter the credentials and it should be straight forward from there.
