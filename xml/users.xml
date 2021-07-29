@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="users.xsd">
+    <user id="1" type="admin">
+        <username>admin</username>
+        <password>$2y$10$qWP6tXSbkqzYG4RxuM8kQeKBKYZZ/mH5uB.cG9XYVj6hhrckF.0IK</password>
+        <name>Sam</name>
+        <email>admin@gmail.com</email>
+    </user>
+    <user id="2" type="client">
+        <username>firstclient</username>
+        <password>$2y$10$W49V3qNnoFCdTvVH8YWU1Odpr.QZD6B3ZngM4JhrEMaA852aLiQNq</password>
+        <name>Mike</name>
+        <email>mike@gmail.com</email>
+    </user>
+    <user id="3" type="client">
+        <username>secondclient</username>
+        <password>$2y$10$ZfpTUuXMsmr/hwY3a7Qz6eyqvcSkbrhrjqg3ch2NzqjlkA6HIOnUS</password>
+        <name>Smith</name>
+        <email>smith@gmail.com</email>
+    </user>
+</users>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tickets.xsd">
+    <ticket id="1" status="resolved" initiatedbyuserid="2">
+        <issuedate>2021-05-10T09:00:00</issuedate>
+        <subject>unable to connect to server</subject>
+        <message timestamp="2021-05-11T09:00:00" sentby_userid="1">Hello, Thank you for contacting technical support.</message>
+        <message timestamp="2021-05-11T09:15:00" sentby_userid="2">Hi, I need help to connect with the server</message>
+    <message timestamp="2021-07-29T01:38:56" sentby_userid="2">Hello? are you there? you have not responded to me in many days?!</message><message timestamp="2021-07-29T02:23:16" sentby_userid="1">yes i am here. sorry we have been very busy. what seems to be the problem?</message></ticket>
+    <ticket id="2" status="on-going" initiatedbyuserid="3">
+        <issuedate>2021-05-11T10:00:00</issuedate>
+        <subject>unable to write a message</subject>
+        <message timestamp="2021-05-12T10:00:00" sentby_userid="1">Hello, Thank you for contacting technical support.</message>
+        <message timestamp="2021-07-27T01:12:07" sentby_userid="3">Yes thank you. I have a problem with my connection today.</message>
+    <message timestamp="2021-07-29T02:26:27" sentby_userid="1">ok sure. i can help you with that. what seems to be the problem with your connection?</message></ticket>
+</tickets>
