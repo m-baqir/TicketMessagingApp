@@ -4,6 +4,7 @@ $rows = '';
 $xml = simplexml_load_file("xml/tickets.xml");
 $userid = $_SESSION["userid"];
 //print_r($_SESSION);
+//ticket listing based on user, the user only gets to see tickets that he/she initiated
 $ticketstarter = $xml->xpath("//ticket[@initiatedbyuserid='$userid']");
 //print_r($ticketstarter);
 

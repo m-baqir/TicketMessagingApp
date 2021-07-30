@@ -4,20 +4,26 @@ $xml = simplexml_load_file("xml/users.xml");
 //**newpasswords: first one is admin $newpass = array('abcd', 1234,5678);
 //var_dump($xml->user['id']);
 if(isset($_POST['login'])) {
+    //once user clicks login, grab field inputs
     $username = $_POST["username"];
     $password = $_POST["password"];
     foreach ($xml->children() as $u){
+        //searches for user and password in the xml
         $userinxml = $u->username;
         $passinxml = $u->password;
+        //grab attributes of xml children
         $userid = $u['id'];
         $accounttype = $u['type'];
+        //compares the hashed password against form input
         $checkpass = password_verify($password,$passinxml);
         if($username == $userinxml && $checkpass==true){
-            echo 'success';
+            //if the user is in xml and the passwords match
+            //echo 'success';
             $_SESSION["userid"] = (string)$userid;
             $_SESSION["username"] = $username;
             $_SESSION["type"] = (string)$accounttype;
-            print_r($_SESSION);
+            //print_r($_SESSION);
+            //then admin gets redirected to ticket-listing page for all tickets, and user goes to userspecific page
             if($accounttype == "admin")
                 header("Location: ticket-listing.php");
             elseif($accounttype == "client")

@@ -5,9 +5,12 @@ $xml = simplexml_load_file("xml/tickets.xml");
 $userid = $_SESSION["userid"];
 $accounttype = $_SESSION["type"];
 $id = $_POST['id'];
+//grabbing the current ticket based on ticket id
 $currentticket = $xml->xpath("//ticket[@id='$id']");
+//grabbing the current ticket based on userid
 $ticketstarter = $xml->xpath("//ticket[@initiatedbyuserid='$userid']");
 if($accounttype == "client") {
+    //clients get access to tickets based on their userid
     foreach ($ticketstarter as $ticket) {
         if ($ticket['id'] == $id) {
             $msgprint = '';
@@ -27,6 +30,7 @@ if($accounttype == "client") {
     }
 }
 elseif ($accounttype == "admin"){
+    //admins get access to tickets based on ticketid
     foreach ($currentticket as $ticket) {
         if ($ticket['id'] == $id) {
             $msgprint = '';
