@@ -36,7 +36,7 @@ session_start();
 
 <body>
 <header>
-    <a href="login.php">Login</a>
+    <a href="index.php">Login</a>
     <a href="redirect.php">Tickets</a>
 </header>
 
@@ -57,7 +57,7 @@ session_start();
     </tbody>
 </table>
 <footer>
-    <a href="login.php">Login</a>
+    <a href="index.php">Login</a>
     <a href="redirect.php">Tickets</a>
 </footer>
 </body>

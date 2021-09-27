@@ -68,7 +68,7 @@ elseif ($accounttype == "admin"){
 
 <body>
 <header>
-    <a href="login.php">Login</a>
+    <a href="index.php">Login</a>
     <a href="redirect.php">Tickets</a>
 </header>
 
@@ -94,7 +94,7 @@ elseif ($accounttype == "admin"){
     </fieldset>
 </form>
 <footer>
-    <a href="login.php">Login</a>
+    <a href="index.php">Login</a>
     <a href="redirect.php">Tickets</a>
 </footer>
 </body>

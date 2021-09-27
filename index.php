@@ -48,7 +48,7 @@ if(isset($_POST['login'])) {
 
 <body>
 <header>
-    <a href="login.php">Login</a>
+    <a href="index.php">Login</a>
     <a href="redirect.php">Tickets</a>
 </header>
 
@@ -63,7 +63,7 @@ if(isset($_POST['login'])) {
     </form>
 
 <footer>
-    <a href="login.php">Login</a>
+    <a href="index.php">Login</a>
     <a href="redirect.php">Tickets</a>
 </footer>
 </body>
